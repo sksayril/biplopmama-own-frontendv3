@@ -26,7 +26,7 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
       }
 
       try {
-        const response = await fetch('https://7cvccltb-5000.inc1.devtunnels.ms/api/users/get-credits', {
+        const response = await fetch('https://api.leadtech.solutions/api/users/get-credits', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -233,12 +233,12 @@ export default function Dashboard({ user, onLogout }: DashboardProps) {
       </div>
       
       {/* Footer with Terms link */}
-      <footer className="bg-white py-4 shadow-inner mt-8">
+      {/* <footer className="bg-white py-4 shadow-inner mt-8">
       <div className="max-w-7xl mx-auto px-4 text-center">
   &copy; {new Date().getFullYear()} Leadtech Open Source Technology. All Rights Reserved.
 </div>
 
-      </footer>
+      </footer> */}
     </div>
   );
 }

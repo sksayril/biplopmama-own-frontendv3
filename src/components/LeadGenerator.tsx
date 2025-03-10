@@ -111,7 +111,7 @@ const LeadGenerator: React.FC<LeadGeneratorProps> = ({ user, onSwitchSection }) 
   const fetchCredits = async (token: string) => {
     if (!token) return;
     try {
-      const response = await axios.post('https://7cvccltb-5000.inc1.devtunnels.ms/api/users/get-credits', { userToken: token });
+      const response = await axios.post('https://api.leadtech.solutions/api/users/get-credits', { userToken: token });
       setCredits(response.data.credits);
       
       // Check if credits are low (less than 100) and show notification
@@ -147,7 +147,7 @@ const LeadGenerator: React.FC<LeadGeneratorProps> = ({ user, onSwitchSection }) 
     setError(null);
     
     try {
-      const response = await axios.post<ScrapeResponse>('https://7cvccltb-5000.inc1.devtunnels.ms/api/data/scrape', { userToken, keyword });
+      const response = await axios.post<ScrapeResponse>('https://api.leadtech.solutions/api/data/scrape', { userToken, keyword });
 
       if (response.data.error && response.data.error.includes("Not enough credits")) {
         setIsUpgradeModalOpen(true);

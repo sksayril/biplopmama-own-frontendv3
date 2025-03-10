@@ -22,7 +22,7 @@ export default function UserSection() {
         return;
       }
       try {
-        const response = await fetch('https://7cvccltb-5000.inc1.devtunnels.ms/api/users/get-credits', {
+        const response = await fetch('https://api.leadtech.solutions/api/users/get-credits', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export default function UserSection() {
     }
     setIsLoading(true);
     try {
-      const orderResponse = await fetch('https://7cvccltb-5000.inc1.devtunnels.ms/api/data/create-order', {
+      const orderResponse = await fetch('https://api.leadtech.solutions/api/data/create-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ export default function UserSection() {
         description: '150 Credits Purchase',
         order_id: orderData.id,
         handler: async function (response: any) {
-          const verifyResponse = await fetch('https://7cvccltb-5000.inc1.devtunnels.ms/api/data/verify-payment', {
+          const verifyResponse = await fetch('https://api.leadtech.solutions/api/data/verify-payment', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

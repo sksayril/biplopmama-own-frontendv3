@@ -24,7 +24,7 @@ export default function HistorySection() {
           return;
         }
 
-        const response = await axios.post("https://7cvccltb-5000.inc1.devtunnels.ms/api/data/get-scraped-data", {
+        const response = await axios.post("https://api.leadtech.solutions/api/data/get-scraped-data", {
           userToken,
         });
 

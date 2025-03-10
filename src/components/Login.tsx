@@ -21,7 +21,7 @@ export default function Login({ onSuccess, onSignupClick }: LoginProps) {
     setError('');
 
     try {
-      const response = await fetch('https://7cvccltb-5000.inc1.devtunnels.ms/api/users/login', {
+      const response = await fetch('https://api.leadtech.solutions/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

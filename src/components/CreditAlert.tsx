@@ -18,7 +18,7 @@ export default function CreditAlert({ onClose }: CreditAlertProps) {
         </p>
         <div className="bg-gray-100 rounded-lg p-4 mb-6">
           <p className="text-center font-bold text-2xl text-blue-600">₹199</p>
-          <p className="text-center text-gray-600">for 150 credits</p>
+          <p className="text-center text-gray-600">for 250 credits</p>
         </div>
         <button
           className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

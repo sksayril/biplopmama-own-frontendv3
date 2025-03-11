@@ -122,7 +122,7 @@ export default function UserSection() {
                 <CreditCard className="w-8 h-8 text-blue-600" />
                 <div>
                   <h4 className="font-semibold">Premium Package</h4>
-                  <p className="text-sm text-gray-600">150 Credits</p>
+                  <p className="text-sm text-gray-600">250 Credits</p>
                 </div>
               </div>
               <span className="text-2xl font-bold text-blue-600">₹199</span>

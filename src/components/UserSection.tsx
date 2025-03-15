@@ -63,7 +63,8 @@ export default function UserSection() {
 
       const options = {
         // key: 'rzp_test_BDT2TegS4Ax6Vp',
-        key: 'rzp_test_DUyJsTbSpXKKaz',
+        // key: 'rzp_test_DUyJsTbSpXKKaz',
+        key: 'rzp_live_ZIhLgmwBjbqzrF',
         amount: 199 * 100,
         currency: 'INR',
         name: 'Lead Generator',
